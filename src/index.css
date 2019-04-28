@@ -1,0 +1,75 @@
+/*
+  If you prefer your CSS Sassy. Run npm install -s node-sass and change the extension and import of this file.
+  Or use Less or whatever form of styling brings you the most Joy. Bonus points for following a CSS methodology. (BEM, OOCSS, ETC)
+*/
+
+body {
+  background: #335A55;
+  color: White;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  overscroll-behavior: none;
+}
+
+input,
+select,
+text,
+textarea {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .Wrapper > div,
+body .Wrapper > form {
+  background: rgba(51, 90, 85, 0.8);
+  padding: 2em;
+  max-width: 1040px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+form button {
+  margin: 12px 0 0;
+}
+
+button:not( .delete ) {
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  opacity: 0.9;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:not( .delete ):hover,
+button:not( .delete ):focus,
+button:not( .delete ):active {
+  transform: rotate(4deg);
+}
+
+label {
+  display: block;
+  font-size: 0.8em;
+  margin: 1em 0 0;
+}
+
+input,
+select {
+  background: none;
+  border: 0;
+  color: White;
+  font-size: 1em;
+  width: 100%;
+}
